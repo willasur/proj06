@@ -26,7 +26,8 @@ namespace HangmanC
 
         List<char> rightGuess = new List<char>();
         List<char> wrongGuess = new List<char>();
-        int guesses = 3;
+
+        int guesses = 4;
         bool won = false;
         int lettersRevealed = 0;
         string userInput;
