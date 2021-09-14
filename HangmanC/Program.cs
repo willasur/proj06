@@ -19,13 +19,13 @@ namespace HangmanC
                 GamePlay.ExitApp();
                 GamePlay.RandomWords();    
             }
-            catch (FormatException)
-            {
-                Console.WriteLine("oh");
-            }
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("oh");//change to method
+            //}
             catch (Exception)
             {
-                Console.WriteLine("uh oh");
+                StandardMessages.ExceptionMessage();
             }
         }
     }

@@ -44,5 +44,9 @@ namespace HangmanC
             Console.WriteLine("Press Any Key to Close App");
             Console.ReadLine();
         }
+        public static void ExceptionMessage()
+        {
+            Console.WriteLine("Please Try Again");
+        }
     }
 }
