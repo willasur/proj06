@@ -26,7 +26,7 @@ namespace HangmanC
 
         List<char> rightGuess = new List<char>();
         List<char> wrongGuess = new List<char>();
-        int guesses = 6;
+        int guesses = 5;
         bool won = false;
         int lettersRevealed = 0;
         string userInput;
@@ -44,7 +44,7 @@ namespace HangmanC
                 }
                 else if (wrongGuess.Contains(userGuess))
                 {
-                    Console.WriteLine("you already tried '{0}', and its wrong", userGuess);
+                    Console.WriteLine("'{0}' has been guessed, Try a different letter", userGuess);
                     Console.WriteLine($"You Have {guesses} Unique Guesses Left");
                     continue;
                 }
@@ -65,9 +65,9 @@ namespace HangmanC
                 else
                 {
                     wrongGuess.Add(userGuess);
-                    Console.WriteLine("No {0} in the puzzle", userGuess);
+                    Console.WriteLine("There is no '{0}' in the puzzle", userGuess);
                     guesses--;
-                    Console.WriteLine($"You Have {guesses} Unique Guesses Left");
+                    Console.WriteLine($"You have {guesses} unique guesses left");
                 }
                 Console.WriteLine(displayToPlayer.ToString());//display letters written to users
             }
@@ -77,7 +77,7 @@ namespace HangmanC
             }
             else
                 StandardMessages.LoseMessage();
-                Console.WriteLine("The Word is: {0} ", wordGuess);
+                Console.WriteLine("The word is: {0} ", wordGuess);
         }
         public static void ExitApp()//proceed or exit method
         {
