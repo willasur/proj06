@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace HangmanC
 {
     class StandardMessages 
-
     {
         public static string opSelect { get; private set; }
         public static void WelcomeMessage()
@@ -32,11 +31,16 @@ namespace HangmanC
         }
         public static void UserMessage()
         {
-            Console.WriteLine("Press Enter to Continue or X to exit");
+            Console.WriteLine("Press Enter to Continue or X to Exit");
         }
         public static void UserExit()
         {
             opSelect = Console.ReadLine();
+        }
+        public static void ExitAppConfirm()
+        {
+            Console.WriteLine("Press X Again to Close App");
+            Console.ReadLine();
         }
     }
 }

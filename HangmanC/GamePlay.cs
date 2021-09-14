@@ -83,7 +83,8 @@ namespace HangmanC
         {
             if (opSelect.ToUpper() == "X")
             {
-              Console.WriteLine("Swell");
+                //Console.WriteLine("Swell");
+              StandardMessages.ExitAppConfirm();
               System.Environment.Exit(1);
             }
             else if (opSelect == "")
