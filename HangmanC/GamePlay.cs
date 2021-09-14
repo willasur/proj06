@@ -14,7 +14,7 @@ namespace HangmanC
             string[] wordList = {"blue", "red", "black", "green", "yellow"};
             string wordGuess = wordList[random.Next(0, wordList.Length)];//random to pick words from wordlist
             string wordGuessUppercase = wordGuess.ToUpper();
-            StringBuilder displayToPlayer = new StringBuilder(wordGuess.Length);
+            StringBuilder displayToPlayer = new StringBuilder(wordGuess.Length);//user sees dashes append to length
             string wordGuessChar = new String('-', wordGuess.Length);//display dashes
             Console.WriteLine($"Your Word has {wordGuess.Length} letters");
             Console.WriteLine(wordGuessChar);
