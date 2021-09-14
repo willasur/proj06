@@ -77,7 +77,7 @@ namespace HangmanC
             }
             else
                 StandardMessages.LoseMessage();
-                Console.WriteLine("The Word Is '{0}'", wordGuess);
+                Console.WriteLine("The Word is: {0} ", wordGuess);
         }
         public static void ExitApp()//proceed or exit method
         {

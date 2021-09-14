@@ -39,7 +39,7 @@ namespace HangmanC
         }
         public static void ExitAppConfirm()
         {
-            Console.WriteLine("Press X Again to Close App");
+            Console.WriteLine("Press Any Key to Close App");
             Console.ReadLine();
         }
     }
