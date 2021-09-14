@@ -11,8 +11,8 @@ namespace HangmanC
         public static void RandomWords()
         {
             Random random = new Random();
-            string[] wordList = { "blue", "red", "black", "abstraction"};
-            string wordGuess = wordList[random.Next(0, wordList.Length)];
+            string[] wordList = {"blue", "red", "black", "green", "yellow"};
+            string wordGuess = wordList[random.Next(0, wordList.Length)];//random to pick words from wordlist
             string wordGuessUppercase = wordGuess.ToUpper();
             StringBuilder displayToPlayer = new StringBuilder(wordGuess.Length);
             string wordGuessChar = new String('-', wordGuess.Length);//display dashes
@@ -26,7 +26,7 @@ namespace HangmanC
 
         List<char> rightGuess = new List<char>();
         List<char> wrongGuess = new List<char>();
-        int guesses = 5;
+        int guesses = 3;
         bool won = false;
         int lettersRevealed = 0;
         string userInput;
@@ -44,8 +44,8 @@ namespace HangmanC
                 }
                 else if (wrongGuess.Contains(userGuess))
                 {
-                    Console.WriteLine("'{0}' has been guessed, Try a different letter", userGuess);
-                    Console.WriteLine($"You Have {guesses} Unique Guesses Left");
+                    Console.WriteLine("'{0}' has been tried, Guess another letter", userGuess);
+                    Console.WriteLine($"You have {guesses} unique guesses left");
                     continue;
                 }
                 if (wordGuessUppercase.Contains(userGuess))
