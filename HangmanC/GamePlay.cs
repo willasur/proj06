@@ -79,17 +79,16 @@ namespace HangmanC
                 StandardMessages.LoseMessage();
                 Console.WriteLine("The Word Is '{0}'", wordGuess);
         }
-        public static void ExitApp()
+        public static void ExitApp()//proceed or exit method
         {
             if (opSelect.ToUpper() == "X")
-            {
-                //Console.WriteLine("Swell");
+            {   
               StandardMessages.ExitAppConfirm();
               System.Environment.Exit(1);
             }
             else if (opSelect == "")
             {
-              Console.WriteLine("ok computer");
+              Console.WriteLine("Player Ready");
             }
             else
             {
