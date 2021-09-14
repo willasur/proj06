@@ -11,15 +11,17 @@ namespace HangmanC
         public static string opSelect { get; private set; }
         public static void WelcomeMessage()
         {
-            Console.WriteLine("Hello Hangman!");
+            Console.WriteLine("Welcome to Hangman");
+            Console.WriteLine("Guess the secret word\nAttempts are limited");
+            Console.WriteLine("Good luck");
         }
         public static void UserPrompt()
         {
-            Console.WriteLine("Please type a Letter");
+            Console.WriteLine("Please type a letter");
         }
         public static void UserRightGuess()
         {
-           Console.WriteLine("You Already Tried That letter");
+           Console.WriteLine("You already tried that letter");
         }
         public static void WinMessage()
         {
