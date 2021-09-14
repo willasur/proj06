@@ -67,7 +67,7 @@ namespace HangmanC
                 {
                     wrongGuess.Add(userGuess);
                     Console.WriteLine("There is no '{0}' in the puzzle", userGuess);
-                    guesses--;
+                    guesses--;//number of guess decrementing
                     Console.WriteLine($"You have {guesses} unique guesses left");
                 }
                 Console.WriteLine(displayToPlayer.ToString());//display letters written to users
